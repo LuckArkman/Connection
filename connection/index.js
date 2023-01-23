@@ -1,11 +1,11 @@
 var express = require('express');
-var bodyParse = require('body-parser');
+var bodyParse = require('body-parse');
 var W3CWebSocket = require('websocket').w3cwebsocket;
 
 console.log("Hello World");
 
 
-var client = new W3CWebSocket('ws:// http://host.docker.internal:4330/GetBillBoard');
+var client = new W3CWebSocket('ws://host.docker.internal:4330/GetBillBoard');
 
 client.onerror = function() {
     console.log('Connection Error');
