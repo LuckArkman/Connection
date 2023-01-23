@@ -1,5 +1,5 @@
 var express = require('express');
-var bodyParse = require('body-parse');
+var bodyParse = require('body-parser');
 var W3CWebSocket = require('websocket').w3cwebsocket;
 
 console.log("Hello World");
